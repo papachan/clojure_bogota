@@ -20,7 +20,7 @@
   []
   (let
     [cad (nth frases (rand-int (count frases)))]
-    (render-template "random" {:phrase cad})))
+    (render-template "index" {:phrase cad})))
 
 (defroutes main-routes
   (GET "/" [] (index))
