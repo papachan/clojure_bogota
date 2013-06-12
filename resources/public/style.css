@@ -1,0 +1,16 @@
+body{
+	font-family: "Arial", sans-serif;
+	background-color:#d2d2d2;
+	font-size: 110%;
+}
+.myclass1 {
+	color: #333;
+	
+}
+.style1{
+	text-decoration: underline;
+}
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
