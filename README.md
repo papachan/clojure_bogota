@@ -1,2 +1,2 @@
-clojure_bogota
+Clojure Bogota Site
 ==============
