@@ -1,5 +1,15 @@
-(ns website.core
-  (:gen-class))
+(ns website.examples
+	(:require [clojure.pprint :refer [cl-format]]))
+
+(cl-format nil "~{~R~^, ~}" [1 2 3 4])
+;=> "one, two, three, four"
+
+(cl-format nil "~r" (rand-int 1e9))
+
+; partial
+(def only-strings (partial filter string?))
+(only-strings ["a" 5 "b" 6])
+;=> ("a" "b")
 
 (map (fn [n] (* n n n)) [1 2 3 4])
 ;=> (1 8 27 64)
@@ -27,8 +37,4 @@
 (classify-age {:age 36})
 ;=> :ancient
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (alter-var-root #'*read-eval* (constantly false))
-  (println "Hello, World!"))
+

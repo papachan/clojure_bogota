@@ -1,3 +1,3 @@
-# Introduction to clojure_bogota
+# Clojure Bogota
 
-TODO: write [great documentation](http://jacobian.org/writing/great-documentation/what-to-write/)
+ 
